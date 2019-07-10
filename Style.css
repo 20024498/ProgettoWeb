@@ -4,11 +4,15 @@
       border: thick;
       border-color: green;
       border-style: groove;
+      padding-left: 2%;
+      padding-right: 2%;
 }
 
-.a1 {
-   width: 25%; 
+.vacanzaEventi a {
+   float: left;
+   margin-right: 2%;
 }
+
 .map{
     border: thick;
     border-color: green;
