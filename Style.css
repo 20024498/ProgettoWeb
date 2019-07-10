@@ -1,11 +1,24 @@
 .vacanzaEventi{
+    float: left;
+    width: 100%;
       border: thick;
       border-color: green;
       border-style: groove;
 }
 
+.a1 {
+   width: 25%; 
+}
 .map{
     border: thick;
     border-color: green;
     border-style: groove;
+}
+
+
+
+
+.vacanzaBlog{
+    border:
+
 }
