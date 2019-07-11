@@ -1,3 +1,14 @@
+.page{
+    overflow: hidden;
+    border: thick;
+    border-color: green;
+    border-style: groove;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
 .vacanzaEventi{
     float: left;
     width: 100%;
@@ -8,29 +19,22 @@
       padding-right: 2%;
 }
 
-.vacanzaEventi a {
-   float: left;
-   margin-right: 2%;
+
+
+.map {
+    float: left;
+    margin: 2%;
 }
-
-
-
-
-.map{
-    border: thick;
-    border-color: green;
-    border-style: groove;
-}
-
 
 
 .ImgVacanza{
-    width: 30%; 
-    height: 30%;
+    float: 
+    width: 15%; 
+    height: 15%;
+    margin: 2%;
 }
 
-
-.vacanzaBlog{
-    border:
-
+.testo {
+    float: left;
+    margin: 2%;
 }
