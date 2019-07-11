@@ -1,3 +1,4 @@
+/*formato nav bar in alto più colore grigio*/
 ul.navbar {
   list-style-type: none;
   margin: 0;
@@ -6,10 +7,12 @@ ul.navbar {
   background-color: #333;
 }
 
+/*elementi affiancati sulla sinistra*/
 li.navbar :not(#registrati) {
   float: left;
 }
 
+/*formattazione dei singoli blocchi + colore*/
 li.navbar a {
   display: block;
   color: white;
@@ -17,25 +20,31 @@ li.navbar a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
+/*quando passi sopra col mouse diventa nero*/
 li.navbar a:hover {
   background-color: #111;
 }
 
+/*right spostato a destra*/
 #registrati{
     float:right;
 }
 
+/*bordo eserno vacanza*/
 .vacanzaBlog {
     border-style: solid;
     margin-top: 25px;
 }
 
+/*footer nero scritte bianche*/
 footer{
     background-color: #333;
     color: white;
 }
 
+/*tentativo di mettere le robe da sinistra a destra*/
 .elemVacanza{
-    display: inline-block;
+    float:left;
+    height: auto;
+    vertical-align:top;
 }
