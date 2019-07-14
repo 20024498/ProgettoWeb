@@ -6,6 +6,8 @@ body {
     display: grid;
     font-family: helvetica;
     margin: 0;
+    
+   
 }
 
 
@@ -15,6 +17,10 @@ body {
     background-color: #333;
     position: fixed;
     z-index: 1;
+    
+   
+    
+    
 
 
 
@@ -74,29 +80,67 @@ header .spacing {
 /*FINO A QUI*/
 
 
+/*INIZIO EVENTI*/
+
+.copertinaeventi{
+    
+    
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(Immagini/Eventi/spiaggia.jpg);
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    
+}
+
+.copertinaeventi h1{
+    
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    margin: 0;
+    width: 100%;
+    grid-row: 2/3;
+    grid-column: 2/3;
+   
+   
+    
+}
+
+/*FINE EVENTI*/
 
 
+/*BLOG INIZIO*/
 
 
 .copertinablog{
     
     height: 100vh;
-    display: block;
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Immagini/Blog/party.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
     
 }
 
 .copertinablog h1{
-    position: absolute;
-    top: 45%;
-    left: 50%;
+    
+   text-align: center;
     font-size: 4em;
     color: white;
-    transform: translate(-50%, -50%);
-    white-space: nowrap;
+    margin: 0;
+    width: 100%;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    
     
 }
 
@@ -169,10 +213,10 @@ header .spacing {
     grid-row: 3/4;
     
 }
-
+/*BLOG FINE*/
 
     
-    
+
 
 
 
@@ -186,6 +230,7 @@ header .spacing {
 
 .wrapfooter {
     background-color: #222;
+     
     
 }
 
