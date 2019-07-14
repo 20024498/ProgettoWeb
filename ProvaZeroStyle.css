@@ -14,13 +14,14 @@ body {
     grid-auto-columns: 1fr;
     background-color: #333;
     position: fixed;
+    z-index: 1;
 
 
 
 }
 
-.spacing {
-    margin-top: 3em;
+header .spacing {
+    margin-top: 3.2em;
 }
 
 
@@ -72,52 +73,114 @@ body {
 
 /*FINO A QUI*/
 
+
+
+
+
+
+.copertinablog{
+    
+    height: 100vh;
+    display: block;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Immagini/Blog/party.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.copertinablog h1{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    font-size: 4em;
+    color: white;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    
+}
+
+
 .vacanzablog {
     display: grid;
-    grid-template-columns: 4fr 6fr;
-    grid-template-rows: 1fr 7fr 3fr;
+    grid-template-rows: 1.5fr 5fr 1fr;
     grid-column-gap: 1em;
+    grid-template-columns: 4.5fr 5.5fr;
+     
 
 }
+
+.vacanzablog:nth-of-type(odd){
+    background-color: yellow;
+   
+}
+
 
 .wraptitoloblog {
     grid-column: 1/3;
     grid-row: 1/2;
-    background-color: aqua;
     display: grid;
-    grid-template-rows: 1fr 2fr 1 fr;
+    grid-template-rows: 1fr 3fr 1 fr;
+    
 }
 
-.wraptitoloblog .titoloblog {
-    /* font-size: 15px;*/
+.titoloblog {
+    
     grid-row: 2/3;
+    margin-left: 1em;
+    text-align: center;
 }
 
-.wrapimmagineblog {
+.wrapvideoblog {
     grid-column: 1/2;
-    grid-row: 2/3;
-    background-color: beige;
+    grid-row: 2/3;  
 }
 
-.wrapimmagineblog .immagineblog {
+
+
+
+
+.videoblog {
     width: 100%;
     height: 100%;
     display: block;
     object-fit: cover;
+    margin-left: 1em;
+    
+    
 }
 
-.wraptestolaterale {
+.wraptestolateraleblog {
     grid-column: 2/3;
-    grid-row: 2/3;
-    background-color: bisque;
+    grid-row: 2/3; 
+    
+    
 }
 
-.wraptestobasso {
+
+.testolateraleblog{
+    margin-left: 1em;
+    margin-right: 1em;
+    
+}
+
+.spacing{
     grid-column: 1/3;
     grid-row: 3/4;
-    background-color: darkkhaki;
-
+    
 }
+
+
+    
+    
+
+
+
+
+
+
+
+
 
 /*COPIA DA QUI*/
 
