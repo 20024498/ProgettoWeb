@@ -49,18 +49,101 @@
 
 
 
+/*NAVBAR*/
 
+html {}
+
+body {
+    display: grid;
+    font-family: helvetica;
+    margin: 0;
+}
+
+
+.navbar {
+    display: grid;
+    grid-auto-columns: 1fr;
+    background-color: #333;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+
+
+}
+
+.spacing {
+    margin-top: 3.2em;
+}
+
+
+.navbar a {
+    padding: 1em 1em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+}
+
+.navbar :hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: yellowgreen;
+}
+
+
+.home {
+    grid-column: 1/2;
+}
+
+.chisiamo {
+    grid-column: 2/3;
+    white-space: nowrap;
+}
+
+.blog {
+    grid-column: 3/4;
+}
+
+.eventi {
+    grid-column: 4/5;
+}
+
+.galleria {
+    grid-column: 5/6;
+}
+
+.registrati {
+    grid-column: 11/12;
+}
+
+.login {
+    grid-column: 12/13;
+}
+
+
+
+/*CORPO*/
 #NiceImageSec{
+    display: grid;
     background-image: url(../Immagini/ChiSiamo/NiceImage.jpg);
     background-image: linear-gradient(black, white, 100%, 100%);
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 180px;
+    padding: 180 px;
+    grid-auto-columns: 1fr;
 }
 
 .NiceText
 {
+    display: grid;
+    grid-auto-columns: 1fr;
+    position: fixed;
+    z-index: 1;
+
+    font-style: italic;
     color: White;
 }
 
@@ -68,7 +151,7 @@
     position: absolute;
     display: inline-block;
     left: 0%;
-    width: 20% ; 
+    width: 10% ; 
     height: 15%;
     margin: 5%;
 }
@@ -94,3 +177,70 @@
 .testoChiSiamo{
     text-align: justify;
 }
+
+
+
+
+/*FOOTER*/
+
+
+
+.wrapfooter {
+    background-color: #222;
+    
+}
+
+
+.wrapfooter p,
+ul {
+    color: white;
+}
+
+.footer {
+    margin-left: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+ .wrapliste{
+    grid-column: 1/2;
+}
+
+.wrapsocial{
+    grid-column: 2/3;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
