@@ -89,7 +89,7 @@ body {
 }
 
 .active {
-    background-color: yellowgreen;
+    background-color: #FF9912;
 }
 
 
@@ -125,57 +125,82 @@ body {
 
 
 /*CORPO*/
-#NiceImageSec{
+.NiceImageSec{
     display: grid;
-    background-image: url(../Immagini/ChiSiamo/NiceImage.jpg);
-    background-image: linear-gradient(black, white, 100%, 100%);
-    background-position: left top;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Immagini/ChiSiamo/NiceImage.jpg);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding: 180 px;
+    background-size: cover;
+    height: 100vh;
     grid-auto-columns: 1fr;
 }
+
+
 
 .NiceText
 {
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    margin: 0;
+    width: 100%;
+    grid-column: 2/3;
+    
+}
+.Title{
+    grid-row: 2/3;
+}
+.Text{
+    grid-row: 3/4;
+}
+
+
+
+.ChiSiamo
+{
     display: grid;
+    grid-template-columns: auto auto auto auto;
     grid-auto-columns: 1fr;
-    position: fixed;
-    z-index: 1;
-
-    font-style: italic;
-    color: White;
 }
 
-#chiSiamo{
-    position: absolute;
-    display: inline-block;
-    left: 0%;
-    width: 10% ; 
-    height: 15%;
-    margin: 5%;
-}
+.ChiSiamoText{
 
-#offerte{
-    display: inline-block;
-    position: absolute;
-    left: 40%;
-    width: 20%; 
-    height: 15%;
-    margin-top: 5%
-}
-
-#lavoro{
-    display: inline-block;
-    position: absolute;
-    right: 0%;
-    width: 20% ; 
-    height: 15%;
-    margin: 5%
-}
-
-.testoChiSiamo{
+    padding: 4em;
     text-align: justify;
+    grid-column: 1/2;
+}
+
+
+.ChiSiamoText:hover{
+background-color: #FF9912;
+}
+
+
+
+
+
+.ChiSiamoJob{
+    padding: 4em;
+    text-align: justify;
+    grid-column: 2/3;
+}
+
+.ChiSiamoJob:hover{
+    background-color: #FF9912;
+}
+
+
+.ChiSiamoOp{
+    padding: 4em;
+    text-align: justify;
+    grid-column: 3/4;
+}
+
+
+.ChiSiamoOp:hover{
+    background-color: #FF9912;
 }
 
 
