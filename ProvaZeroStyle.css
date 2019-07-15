@@ -17,7 +17,7 @@ body {
     background-color: #333;
     position: fixed;
     z-index: 1;
-    width:100%;
+    width: 100%;
     
    
     
@@ -45,7 +45,7 @@ header .spacing {
 }
 
 .active {
-    background-color: orange;
+    background-color: #FF9912;
 }
 
 
@@ -108,9 +108,20 @@ header .spacing {
     width: 100%;
     grid-row: 2/3;
     grid-column: 2/3;
-   
-   
     
+}
+
+.intermezzoeventi{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 50vh;
+}
+
+.intermezzoeventi h2{
+    
+    font-size: 275%;
+    text-align: center;
+    grid-row: 2/3;
 }
 
 /*FINE EVENTI*/
