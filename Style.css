@@ -129,18 +129,19 @@ body {
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto auto auto;
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Immagini/ChiSiamo/NiceImage.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Immagini/ChiSiamo/gruppo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    grid-auto-columns: 1fr;
 }
 
 
 
 .NiceText
 {
+    font-family: scriptina;
+    font-style: italic;
     text-align: center;
     font-size: 4em;
     color: white;
@@ -158,16 +159,23 @@ body {
 
 
 
+
+
+
+
+
+
+
+
 .ChiSiamo
 {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .ChiSiamoText{
 
-    padding: 4em;
+    padding: 5em;
     text-align: justify;
     grid-column: 1/2;
 }
@@ -178,13 +186,10 @@ background-color: #FF9912;
 }
 
 
-
-
-
 .ChiSiamoJob{
-    padding: 4em;
+    padding: 5em;
     text-align: justify;
-    grid-column: 2/3;
+    grid-column: 3/4;
 }
 
 .ChiSiamoJob:hover{
@@ -192,19 +197,80 @@ background-color: #FF9912;
 }
 
 
-.ChiSiamoOp{
-    padding: 4em;
+.ChiSiamoStory{
+    padding: 5em;
     text-align: justify;
-    grid-column: 3/4;
+    grid-column: 2/3;
 }
 
 
-.ChiSiamoOp:hover{
+.ChiSiamoStory:hover{
     background-color: #FF9912;
 }
 
 
 
+
+
+
+
+
+.diconoDiNoiClass{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.diconoDiNoi1{
+    padding: 5em;
+    grid-column: 1/2; 
+}
+
+
+.diconoDiNoi1:hover{
+background-color: #FF9912;
+}
+
+
+
+.diconoDiNoi2{
+    padding: 5em;
+    grid-column: 2/3;
+}
+
+.diconoDiNoi2:hover{
+    background-color: #FF9912;
+}
+
+
+.diconoDiNoi3{
+    padding: 5em;
+    grid-column: 3/4;
+}
+
+
+.diconoDiNoi3:hover{
+    background-color: #FF9912;
+}
+
+.diconoDiNoiImg{
+    width: 100%;
+    height: 100%;
+}
+
+.diconoDiNoiImg:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s linear;
+}
+
+
+
+
+.society{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
 
 /*FOOTER*/
 
