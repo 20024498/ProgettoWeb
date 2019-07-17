@@ -190,13 +190,13 @@ header .spacing {
 
 .wraptitoloeventi h2 {
 
+    position: absolute;
     text-align: center;
-    font-size: 4em;
+    font-size: 3.5em;
     color: white;
     margin: 0;
     width: 100%;
-    grid-row: 2/3;
-    grid-column: 2/3;
+    top: 40%;
 }
 
 .vacanzaeventi {
@@ -206,8 +206,7 @@ header .spacing {
     grid-column-gap: 1em;
     grid-template-columns: 1fr 2fr;
     grid-gap: 1em;
-    border-width: thick;
-    border-color: black;
+   background-color: brown;
 
 }
 
