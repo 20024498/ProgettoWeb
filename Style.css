@@ -145,7 +145,6 @@ body {
     text-align: center;
     font-size: 4em;
     color: white;
-    margin: 0;
     width: 100%;
     grid-column: 2/3;
     
@@ -216,6 +215,7 @@ background-color: #FF9912;
 
 
 .diconoDiNoiClass{
+    background-color: #222;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -266,11 +266,83 @@ background-color: #FF9912;
 
 
 
+
+
+
+
+
+
 .society{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
+
+.Bilzerian{
+    grid-column: 1/2; 
+}
+
+
+.Gili{
+    grid-column: 2/3; 
+}
+
+.Alcamo
+{
+    grid-column: 3/4; 
+}
+
+
+
+.name{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.name:hover{
+    background-color: #FF9912;
+}
+
+
+
+
+
+.nomepar{
+    grid-column: 1/2;
+    text-align: left;
+}
+
+
+.ImgSoc {
+    width: 40%;
+    height: 130%;
+    border-radius: 50%;
+    grid-column: 2/3;
+}
+
+.ImgSoc:hover {
+    opacity: 0.7;
+}
+
+.ImgNome{
+    padding: 2em;
+}
+
+.TestoNome{
+    padding: 2em;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*FOOTER*/
 
