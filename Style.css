@@ -80,6 +80,18 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*Chi siamo*/
 .NiceImageSec{
     display: grid;
@@ -118,10 +130,6 @@ body {
 
 
 
-
-
-
-
 .ChiSiamo
 {
     margin-top:1.5em;
@@ -130,6 +138,17 @@ body {
     grid-template-rows: 1fr;
     font-size:1.5em;
     margin-bottom:1.5em;
+}
+
+.ChiSiamoIcon{
+    height: 5.5em;
+    width: 5.5em;
+}
+
+.Icon{
+    align-content: center;
+    padding: 2em;
+    padding-left:6.5em;
 }
 
 .ChiSiamoText{
@@ -172,11 +191,6 @@ background-color: #FF9912;
 
 
 
-
-
-
-
-
 .diconoDiNoiClass{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -211,10 +225,6 @@ background-color: #FF9912;
     transition: transform 0.2s linear;
     opacity: 1;
 }
-
-
-
-
 
 
 
@@ -280,15 +290,11 @@ background-color: #FF9912;
     opacity: 0.7;
 }
 
-
 .ImgNome{
     grid-column: 2/3;
     align-content: center;
     padding: 2em;
 }
-
-
-
 .Radio{
     height: 8em;
     width: 8em;
