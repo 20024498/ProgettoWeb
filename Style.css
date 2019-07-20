@@ -139,6 +139,10 @@ body {
     font-size:1.5em;
     margin-bottom:1.5em;
 }
+.UnderTitle
+{
+    text-align: center;
+}
 
 .ChiSiamoIcon{
     height: 5.5em;
@@ -148,8 +152,9 @@ body {
 .Icon{
     align-content: center;
     padding: 2em;
-    padding-left:6.5em;
+    padding-left:6.4em;
 }
+
 
 .ChiSiamoText{
 
