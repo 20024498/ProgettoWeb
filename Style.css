@@ -1,47 +1,3 @@
-.page{
-    overflow: hidden;
-    border: thick;
-    border-color: black;
-    border-style: groove;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 2%;
-    padding-top: 2%;
-}
-
-.vacanzaEventi{
-    float: left;
-    width: 100%;
-      border: thick;
-      border-color: green;
-      border-style: groove;
-      padding-left: 2%;
-      padding-right: 2%;
-}
-
-.map {
-    float: left;
-    margin: 2%;
-}
-
-
-.ImgVacanza{
-    float: left;
-    width: 15%; 
-    height: 15%;
-    margin: 2%;
-}
-
-.testo {
-    float: left;
-    margin: 2%;
-}
-
-
-
-
-
-
 /*
 *qui inizia il codice della pagina "chi siamo"
 *
@@ -124,7 +80,7 @@ body {
 
 
 
-/*CORPO*/
+/*Chi siamo*/
 .NiceImageSec{
     display: grid;
     grid-template-rows: auto auto auto auto;
@@ -168,8 +124,12 @@ body {
 
 .ChiSiamo
 {
+    margin-top:1.5em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-size:1.5em;
+    margin-bottom:1.5em;
 }
 
 .ChiSiamoText{
@@ -214,32 +174,23 @@ background-color: #FF9912;
 
 
 
+
+
+
 .diconoDiNoiClass{
-    background-color: #222;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color:#FFF0F5;
 }
-
 
 .diconoDiNoi1{
     padding: 5em;
     grid-column: 1/2; 
 }
 
-
-.diconoDiNoi1:hover{
-background-color: #FF9912;
-}
-
-
-
 .diconoDiNoi2{
     padding: 5em;
     grid-column: 2/3;
-}
-
-.diconoDiNoi2:hover{
-    background-color: #FF9912;
 }
 
 
@@ -249,19 +200,18 @@ background-color: #FF9912;
 }
 
 
-.diconoDiNoi3:hover{
-    background-color: #FF9912;
-}
-
 .diconoDiNoiImg{
     width: 100%;
     height: 100%;
+    opacity: 0.7;
 }
 
 .diconoDiNoiImg:hover{
     transform: scale(1.2);
     transition: transform 0.2s linear;
+    opacity: 1;
 }
+
 
 
 
@@ -275,10 +225,11 @@ background-color: #FF9912;
 .society{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top:1.5em;
 }
 
 
-.Bilzerian{
+.Alcamo{
     grid-column: 1/2; 
 }
 
@@ -287,10 +238,12 @@ background-color: #FF9912;
     grid-column: 2/3; 
 }
 
-.Alcamo
+.Bilzerian
 {
     grid-column: 3/4; 
 }
+
+
 
 
 
@@ -311,7 +264,9 @@ background-color: #FF9912;
 
 .nomepar{
     grid-column: 1/2;
-    text-align: left;
+    text-align: center;
+    font-size:1.2em;
+    padding: 1em;
 }
 
 
@@ -319,23 +274,41 @@ background-color: #FF9912;
     width: 40%;
     height: 130%;
     border-radius: 50%;
-    grid-column: 2/3;
 }
 
 .ImgSoc:hover {
     opacity: 0.7;
 }
 
+
 .ImgNome{
+    grid-column: 2/3;
+    align-content: center;
     padding: 2em;
+}
+
+
+
+.Radio{
+    height: 8em;
+    width: 8em;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.StefanoImg{
+    height: 100%;
+    width: 100%;
 }
 
 .TestoNome{
     padding: 2em;
 }
+/* FINE CHI SIAMO*/
 
 
-
+/* INIZIO HOME*/
 
 
 
