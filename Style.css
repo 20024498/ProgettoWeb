@@ -147,12 +147,13 @@ body {
 .ChiSiamoIcon{
     height: 5.5em;
     width: 5.5em;
+    grid-column: 2/3;
 }
 
 .Icon{
-    align-content: center;
-    padding: 2em;
-    padding-left:6.4em;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    
 }
 
 
