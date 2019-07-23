@@ -92,7 +92,7 @@ body {
 
 
 
-/*Chi siamo*/
+/*INIZIO CHI SIAMO*/
 .copertinaChiSiamo{
     display: grid;
     grid-template-rows: auto auto auto auto;
@@ -315,7 +315,320 @@ background-color: #FF9912;
 /* FINE CHI SIAMO*/
 
 
-/* INIZIO HOME*/
+/*INIZIO EVENTI*/
+
+.copertinaEventi {
+
+
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Immagini/Eventi/spiaggia.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+
+}
+
+.copertinaEventi h1 {
+
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    margin: 0;
+    width: 100%;
+    grid-row: 2/3;
+    grid-column: 2/3;
+
+}
+
+.intermezzoEventi {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 50vh;
+}
+
+.intermezzoEventi h2 {
+
+    font-size: 275%;
+    text-align: center;
+    grid-row: 2/3;
+}
+
+.sectionVacanzeEventi {
+
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+   
+
+}
+
+.selettoreEventi {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: 1em;
+    margin-right: 1em;
+    grid-gap: 1em;
+    margin-bottom: 3em;
+    
+}
+
+.wrapFotoEventi {
+
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+
+
+
+}
+
+.wrapFotoEventi1 {
+    grid-column: 1/2;
+}
+
+.wrapFotoEventi2 {
+    grid-column: 2/3;
+}
+
+.wrapFotoEventi:hover .fotoSelettoreEventi {
+    transform: scale(1.20);
+    transition: transform 0.25s;
+
+}
+
+.wrapFotoEventi:not(:hover) .fotoSelettoreEventi {
+    transform: scale(1);
+    transition: transform 0.25s;
+}
+
+.fotoSelettoreEventi {
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+
+}
+
+.foto1SelettoreEventi {
+
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Immagini/Eventi/pag.jpg);
+
+}
+
+.foto2SelettoreEventi {
+
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Immagini/Eventi/gallipoli.jpg);
+
+}
+
+.wrapFotoEventi h2 {
+
+    position: absolute;
+    text-align: center;
+    font-size: 3.5em;
+    color: white;
+    margin: 0;
+    width: 100%;
+    top: 40%;
+}
+
+.vacanzaEventi {
+
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 4fr 1fr;
+   
+
+    background-color: #f7f7f7;
+    height: 100vh;
+    
+    border-top-style: solid;
+    border-top-width: 1em;
+    border-top-color: #FF9912 ;
+    
+    
+}
+
+.vacanzaEventi1 {
+    grid-row: 2/3;
+
+}
+
+.vacanzaEventi2 {
+    grid-row: 3/4;
+    margin-bottom: 3em;
+
+}
+
+.titoloEventi {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+
+}
+
+.titoloEventi h2 {
+    grid-row: 2/3;
+    font-size: 200%;
+    text-align: center;
+
+}
+
+
+
+
+.mappaEventi {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: blue;
+    margin-right: 1em;
+    margin-left: 1em;
+
+}
+
+.mappaEventi1 {}
+
+.mappaEventi2 {}
+
+.descrizioneEventi {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    font-size: 1.2em;
+}
+
+
+
+
+.sectionVacanzeEventi .spacing {
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+
+
+
+/*FINE EVENTI*/
+
+
+/*BLOG INIZIO*/
+
+
+.copertinaBlog {
+
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Immagini/Blog/party.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+
+
+}
+
+.copertinaBlog h1 {
+
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    margin: 0;
+    width: 100%;
+    grid-row: 2/3;
+    grid-column: 2/3;
+
+
+}
+
+
+.sectionBlog {
+    display: grid;
+    grid-template-rows: 1.5fr 5fr 1fr;
+    grid-column-gap: 1em;
+    grid-template-columns: 4.5fr 5.5fr;
+    
+
+
+}
+
+.sectionBlog:nth-of-type(odd) {
+    background-color: #ffe44a;
+
+}
+
+
+.wrapTitoloBlog {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1 fr;
+
+}
+
+.titoloBlog {
+
+    grid-row: 2/3;
+    margin-left: 1em;
+    text-align: center;
+}
+
+.wrapVideoBlog {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+
+
+
+
+.videoBlog {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    margin-left: 1em;
+
+
+}
+
+.wrapTestoLateraleBlog {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+
+}
+
+
+.testoLateraleBlog {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1em;
+
+}
+
+.spaziatoreBlog {
+    grid-column: 1/3;
+    grid-row: 3/4;
+
+}
+
+
+
+/*BLOG FINE*/
+
 
 
 
@@ -328,13 +641,16 @@ background-color: #FF9912;
 
 
 
-.wrapfooter {
+
+
+.wrapFooter {
     background-color: #222;
-    
+
+
 }
 
 
-.wrapfooter p,
+.wrapFooter p,
 ul {
     color: white;
 }
@@ -345,11 +661,11 @@ ul {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
- .wrapliste{
+.wrapListe {
     grid-column: 1/2;
 }
 
-.wrapsocial{
+.wrapSocial {
     grid-column: 2/3;
 }
 
@@ -386,4 +702,7 @@ ul {
     background: #bb0000;
     color: white;
 }
+
+
+
 
