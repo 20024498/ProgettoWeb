@@ -82,6 +82,124 @@ body {
 
 
 
+/*HOME*/
+
+.copertinaHome{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Immagini/Home/foto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+
+.partecipaHome{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.partecipaHome .invitiHome{
+    grid-row: 1/2;
+    grid-column: 1/4;
+    text-align: center;
+    font-size:3em;
+    padding: 2em;
+}
+
+.partecipaHome .sottoDiv{
+    grid-row:2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+} 
+
+.partecipaHome .sottoDiv:hover{
+    background-color: #FF9912;
+}
+
+
+
+.partecipaHome .amici{
+    grid-column: 1/2;
+}
+
+.partecipaHome .luoghiHome{
+    grid-column: 2/3;
+}
+
+.partecipaHome .zeroHome{
+    grid-column: 3/4;
+}
+
+
+
+.partecipaHome .descrizione{
+    grid-row: 2/3;
+    text-align: center;
+    font-size:2em;
+}
+
+
+
+.partecipaHome .imgDiv{
+    grid-row: 1/2;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+.partecipaHome .radio{
+    height: 15em;
+    width: 15em;
+    overflow: hidden;
+    border-radius: 50%;
+    grid-column: 2/3;
+}
+.partecipaHome .circleImg{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.miniGalleriaHome{
+    background-color: #111;
+    margin-bottom: 3em;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    height: 60vh;
+    width: 100%;
+}
+
+
+.sliderDiv{
+    grid-column: 2/3;
+    height: 60vh;
+    width: 50vw;
+}
+
+
+
+#sliderImg
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
 
 
 
@@ -103,7 +221,7 @@ body {
 
 
 
-.copertinaChiSiamo .niceText
+.copertinaChiSiamo .copertinaText
 {
     font-family: scriptina;
     font-style: italic;
@@ -276,17 +394,6 @@ background-color: #FF9912;
     padding: 1em;
 }
 
-
-.societyChiSiamo .imgSoc {
-    width: 40%;
-    height: 130%;
-    border-radius: 50%;
-}
-
-.societyChiSiamo .imgSoc:hover {
-    opacity: 0.7;
-}
-
 .societyChiSiamo .imgNome{
     grid-column: 2/3;
     align-content: center;
@@ -301,15 +408,29 @@ background-color: #FF9912;
 }
 
 
-.societyChiSiamo .stefanoImg{
+.societyChiSiamo .nomeImg{
     height: 100%;
     width: 100%;
 }
 
+.societyChiSiamo .radio:hover {
+    opacity: 0.7;
+}
 .societyChiSiamo .testoNome{
     padding: 2em;
 }
 /* FINE CHI SIAMO*/
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*INIZIO EVENTI*/
@@ -631,6 +752,16 @@ background-color: #FF9912;
 
 
 
+
+
+/*GALLERIA INIZIO*/
+.schermataGalleria
+{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto 1fr;
+    grid-template-rows: 1fr auto auto auto auto auto 1fr;
+}
 
 
 

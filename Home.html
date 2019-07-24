@@ -15,8 +15,6 @@
     <link href="Style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="" />
-
-
     <title>Home</title>
 </head>
 
@@ -41,13 +39,115 @@
     </header>
 
 
-    <section>
-    
-    
-    
+
+
+
+    <section class= "copertinaHome">
+        <h1 class= "copertinaText title">ApeTour</h1>
+        <p class = "copertinaText text">“L’unica vera legge è quella che conduce alla libertà.”</p>
     </section>
     
+
+
+
+
+
+    <section class="partecipaHome">
+        <div class="invitiHome">
+            <h1>Se sei alla ricerca di una nuova avventura allora questo è il posto giusto per te!</h1>
+            <p>Qui potrai trovare ogni giorno nuove offerte e sconti fino al 40% sui viaggi di gruppo;
+            affrettati e compra il tuo bigliettoprima che finiscano i posti per il prossimo viaggio! <br>
+            Visita la sezioni blog, eventi e galleria per non perdere la tua opportunita di vivere un'esperienza indimenticabile!</p>
+        </div>
+            
+
+
+
+        <div class ="sottoDiv amciHome">
+            <div class= "descrizione">
+                <p>Incontra nuovi amici!</p>
+            </div>
+
+            <div class= "imgDiv">
+                <div class ="radio">
+                    <img class= "circleImg" src="Immagini/ChiSiamo/Ruoli/Stefano.jpeg" alt= "ImgAmici">
+                </div>
+            </div>
+        </div>
+
+        <div class ="sottoDiv luoghiHome">
+                <div class= "descrizione">
+                    <p>Scopri nuove mete!</p>
+                </div>
     
+                <div class= "imgDiv">
+                    <div class ="radio">
+                        <img class= "circleImg" src="Immagini/ChiSiamo/Ruoli/Stefano.jpeg" alt= "ImgLuoghi">
+                    </div>
+                </div>
+        </div>
+
+        <div class ="sottoDiv zeroHome">
+                <div class= "descrizione">
+                    <p>Zero sbatti!</p>
+                </div>
+    
+                <div class= "imgDiv">
+                    <div class ="radio">
+                        <img class= "circleImg" src="Immagini/ChiSiamo/Ruoli/Stefano.jpeg" alt= "ImgZero">
+                    </div>
+                </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+    <section class="miniGalleriaHome">
+        <div class= "sliderDiv">
+            <img  id="sliderImg" src="Immagini/SliderHome/foto (1).jpg" alt=" Slider">
+        </div>
+    </section>
+
+    
+    <script type="text/javascript">
+        var i=1;
+        var time=3000;
+
+
+       // Window.addEventListener("load", foreward());
+        function foreward(){
+            //sleep(3000);
+            i++;
+                if(i > 10)
+                {
+                    i=1;
+                }
+                setTimeout("foreward()", time);
+                document.getElementById("sliderImg").src = "Immagini/SliderHome/foto (" + i + ").jpg";
+        }
+
+
+        window.onload = foreward;
+        /*function sleep(ms) {
+            var start = new Date().getTime();
+            for (var i = 0; i < 1e7; i++) {
+                if ((new Date().getTime() - start) > ms){break;}
+                }
+                return;
+            }*/
+    </script>
+
+
+
+
+
+
+
+
 
 
 <footer class="wrapFooter">
