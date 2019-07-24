@@ -107,14 +107,14 @@
 
 
     <section class="miniGalleriaHome">
-        <div class= "sliderDiv">
-            <img  id="sliderImg" src="Immagini/SliderHome/foto(1).jpg" alt=" Slider">
+        <div class= "sliderDiv fade">
+            <img  id="sliderImg" src="" alt=" Slider">
         </div>
     </section>
 
     
-    <script type="text/javascript">
-        var i=1;
+    <script>
+        var i=0;
         var time=3000;
 
 
@@ -127,7 +127,7 @@
                     i=1;
                 }
                 setTimeout("foreward()", time);
-                document.getElementById("sliderImg").src = "Immagini/SliderHome/foto(" + i + ").jpg";
+                document.getElementById("sliderImg").src = "Immagini/SliderHome/foto" + i + ".jpg";
         }
 
 
