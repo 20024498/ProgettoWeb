@@ -41,40 +41,44 @@
     </header>
 
 
+    <form action="Autenticazione.php" method="post">
+
+        <section class="sezioneRegistrati">
 
 
 
-    <section class="sezioneRegistrati">
+            <div class="formRegistrati">
+
+                <div class="titoloRegistrati">
+
+                    <h1> Iscriviti alla nostra Newsletter! </h1>
+
+                </div>
 
 
-        <div class="formRegistrati">
+                <div class="wrapCredenzialiRegistrati">
 
-            <div class="titoloRegistrati">
+                    <input class="credenziale Nome" type="text" placeholder="Nome*" name="nome" required>
+                    <input class="credenziale Cognome" type="text" placeholder="Cognome*" name="cognome" required>
+                    <input class="credenziale Email" type="email" placeholder="Indirizzo Email*" name="mail" required>
 
-                <h1> Iscriviti alla nostra Newsletter! </h1>
+                </div>
+
+                <div class="bottoneRegistrati">
+
+                    <input type="submit" value="ISCRIVITI">
+                    
+                    <p>I campi con * sono obbligatori.</p>
+
+                </div>
+                
+                
 
             </div>
 
+        </section>
 
-            <div class="wrapCredenzialiRegistrati">
-
-                <input class="credenziale Nome" type="text" placeholder="Nome" name="nome" required>
-                <input class="credenziale Cognome" type="text" placeholder="Cognome" name="cognome" required>
-                <input class="credenziale Email" type="text" placeholder="Indirizzo Email" name="Mail" required>
-
-            </div>
-
-            <div class="bottoneRegistrati">
-
-                <input type="submit" value="ISCRIVITI">
-
-            </div>
-
-        </div>
-
-
-
-    </section>
+    </form>
 
 
 
