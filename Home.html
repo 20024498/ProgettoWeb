@@ -107,7 +107,7 @@
 
 
     <section class="miniGalleriaHome">
-        <div class= "sliderDiv fade">
+        <div class= "fade">
             <img  id="sliderImg" src="" alt=" Slider">
         </div>
     </section>
@@ -119,19 +119,19 @@
 
 
        // Window.addEventListener("load", foreward());
-        function foreward(){
+        function forward(){
             //sleep(3000);
             i++;
                 if(i > 10)
                 {
                     i=1;
                 }
-                setTimeout("foreward()", time);
-                document.getElementById("sliderImg").src = "Immagini/SliderHome/foto" + i + ".jpg";
+                setTimeout("forward()", time);
+                document.getElementById("fade").src = "Immagini/SliderHome/foto" + i + ".jpg";
         }
 
 
-        window.onload = foreward;
+        window.onload = forward;
         /*function sleep(ms) {
             var start = new Date().getTime();
             for (var i = 0; i < 1e7; i++) {

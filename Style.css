@@ -187,7 +187,10 @@ body {
 }
 
 
-.fade {
+#fade
+{
+    height: 100%;
+    width: 100%;
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
@@ -210,12 +213,6 @@ body {
     to {
         opacity: 1;
     }
-}
-
-#sliderImg
-{   
-    height: 100%;
-    width: 100%;
 }
 
 
