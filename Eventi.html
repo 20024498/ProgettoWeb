@@ -5,6 +5,9 @@
 <html lang="it">
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+        
     <meta charset="utf-8">
     <meta name="descritpion" content="Questa pagina è il blog del sito utilizzato per rendere partecipi
          gli utenti di quali gite sono state effettuate precedentemente.">
@@ -96,9 +99,7 @@
             </div>
 
 
-            <div class="mappaEventi mappaEventi1">
-
-
+            <div class="mappaEventi mappaEventi1" id="mappa">
 
             </div>
 
@@ -133,7 +134,7 @@
 
             </div>
 
-            <div class="mappaEventi mappaEventi2">
+            <div class="mappaEventi mappaEventi2" id="mappa2">
 
 
             </div>
@@ -163,7 +164,55 @@
     </section>
 
 
+    <script>
+        var mymap= L.map('mappa').setView([44.483333, 14.95], 11);
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw',{ maxZoom: 18,attribution: 'Mapdata &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',id: 'mapbox.streets'}).addTo(mymap);
+        
+        L.marker([44.542538, 14.916819]).addTo(mymap);
+        L.marker([44.538395, 14.916231]).addTo(mymap);
+        L.marker([44.570397, 14.888083]).addTo(mymap);
+        L.marker([44.553505, 14.884991]).addTo(mymap);
+        L.marker([44.53876, 14.91461]).addTo(mymap);
+        L.marker([44.441487, 15.045337]).addTo(mymap);
 
+        
+
+        
+        
+        
+
+        
+
+
+
+        
+
+    
+
+
+
+
+
+
+
+
+        var mymap2= L.map('mappa2').setView([40.055556, 17.991667], 12);
+        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw',{ maxZoom: 18,attribution: 'Mapdata &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',id: 'mapbox.streets'}).addTo(mymap2);
+        L.marker([40.0555,17.9973]).addTo(mymap2);
+        L.marker([40.055497, 17.990414]).addTo(mymap2);
+        L.marker([40.051127,17.996067]).addTo(mymap2);
+        L.marker([40.21667, 18.16667]).addTo(mymap2);
+        L.marker([40.095409, 18.02574]).addTo(mymap2);
+        L.marker([40.031375, 18.020344]).addTo(mymap2);
+        L.marker([40.005989, 18.019514]).addTo(mymap2);
+        L.marker([40.037455, 18.015562]).addTo(mymap2);
+
+        
+        
+
+
+
+    </script>
 
 
 
