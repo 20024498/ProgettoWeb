@@ -992,6 +992,11 @@ body {
     grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: 1fr 4fr 1fr;
 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Immagini/Registrati/BoraBora.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .formRegistrati {
@@ -1031,7 +1036,7 @@ body {
 }
 
 .wrapCredenzialiRegistrati .credenziale {
-    
+
     font-size: 1.5em;
 }
 
@@ -1054,7 +1059,7 @@ body {
 .bottoneRegistrati {
     grid-row: 3/4;
     grid-column: 2/3;
-    
+
 
 
 }
@@ -1068,12 +1073,13 @@ body {
     box-sizing: border-box;
     margin-top: 3em;
     background-color: #FF9912;
+    font-weight: bolder;
 }
 
-.bottoneRegistrati input[type=submit]:active{
-   background-color: coral;
-  box-shadow: 0 1px #666;
-  transform: translateY(1px);
+.bottoneRegistrati input[type=submit]:active {
+    background-color: #FF9912;
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
 }
 
 /*FINE REGISTRATI */
