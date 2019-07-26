@@ -1058,7 +1058,7 @@ body {
     grid-row: 1/2;
     grid-column: 1/4;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 1vw;
     font-size: 1.2vw;
 
 }
@@ -1070,7 +1070,7 @@ body {
 
     display: grid;
     grid-template-rows: auto auto auto;
-    grid-row-gap: 2em;
+    grid-row-gap: 2vw;
 
 }
 
@@ -1112,7 +1112,7 @@ body {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    margin-top: 3em;
+    margin-top: 2vw;
     background-color: #FF9912;
     font-weight: bolder;
     border-radius: 0.5em;

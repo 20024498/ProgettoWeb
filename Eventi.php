@@ -31,9 +31,9 @@
             <a class="home" href="Home.html">HOME</a>
             <a class="chisiamo" href="ChiSiamo.html">CHI SIAMO</a>
             <a class="blog " href="Blog.html">BLOG</a>
-            <a class="eventi active" href="Eventi.html">EVENTI</a>
+            <a class="eventi active" href="Eventi.php">EVENTI</a>
             <a class="galleria" href="Galleria.html">GALLERIA</a>
-            <a class="registrati" href="Registrati.html">REGISTRATI</a>
+            <a class="registrati" href="Registrati.php">REGISTRATI</a>
 
         </nav>
 
