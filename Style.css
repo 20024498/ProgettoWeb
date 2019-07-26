@@ -22,7 +22,7 @@ body {
     background-color: #333;
     position: fixed;
     z-index: 9999;
-    width: 100%;
+    width: 100vw;
 
 
 }
@@ -109,7 +109,7 @@ body {
     grid-row: 1/2;
     grid-column: 1/4;
     text-align: center;
-    font-size: 3em;
+    font-size: 2vw;
     padding: 2em;
 }
 
@@ -142,7 +142,7 @@ body {
 .partecipaHome .descrizione {
     grid-row: 2/3;
     text-align: center;
-    font-size: 2em;
+    font-size: 2vw;
 }
 
 
@@ -254,7 +254,7 @@ body {
     font-family: scriptina;
     font-style: italic;
     text-align: center;
-    font-size: 4em;
+    font-size: 4vw;
     color: white;
     width: 100%;
     grid-column: 2/3;
@@ -280,7 +280,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    font-size: 1.5em;
+    font-size: 1.3vw;
     margin-bottom: 1.5em;
 }
 
@@ -418,7 +418,7 @@ body {
 .societyChiSiamo .nomepar {
     grid-column: 1/2;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1vw;
     padding: 1em;
 }
 
@@ -484,7 +484,7 @@ body {
 .copertinaEventi h1 {
 
     text-align: center;
-    font-size: 4em;
+    font-size: 4vw;
     color: white;
     margin: 0;
     width: 100%;
@@ -587,7 +587,7 @@ body {
 
     position: absolute;
     text-align: center;
-    font-size: 3.5em;
+    font-size: 3.5vw;
     color: white;
     margin: 0;
     width: 100%;
@@ -689,7 +689,7 @@ body {
 .copertinaBlog h1 {
 
     text-align: center;
-    font-size: 4em;
+    font-size: 4vw;
     color: white;
     margin: 0;
     width: 100%;
@@ -761,7 +761,7 @@ body {
 .testoLateraleBlog {
     margin-left: 1em;
     margin-right: 1em;
-    font-size: 1em;
+    font-size: 1vw;
 
 }
 
@@ -842,7 +842,7 @@ body {
     cursor: pointer;
     color: #FF9912;
     font-weight: bold;
-    font-size: 10em;
+    font-size: 10vw;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
 
@@ -856,7 +856,7 @@ body {
     cursor: pointer;
     color: #FF9912;
     font-weight: bold;
-    font-size: 10em;
+    font-size: 10vw;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
 }
@@ -1038,7 +1038,7 @@ body {
 
 .wrapCredenzialiRegistrati .credenziale {
 
-    font-size: 1.5em;
+    font-size: 1.5vw;
 }
 
 .wrapCredenzialiRegistrati .Nome {
