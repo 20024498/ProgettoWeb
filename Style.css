@@ -566,6 +566,7 @@ body {
     width: 100%;
     height: 100%;
     display: block;
+    border: 0;
 
     background-size: cover;
     background-position: center;
@@ -657,6 +658,18 @@ body {
     grid-row: 2/3;
     grid-column: 2/3;
     font-size: 1.2vw;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.infoGeneraliEventi{
+    
+    background-color: aqua;
+}
+
+.infoAttivitàEventi{
+    
+    background-color: aquamarine;
 }
 
 
