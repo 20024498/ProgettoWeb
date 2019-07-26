@@ -24,6 +24,8 @@
 </head>
 
 <body>
+    
+    <?php import 'Connessione.php';  ?>
 
     <header>
 
@@ -105,17 +107,16 @@
 
             <div class="descrizioneEventi descrizioneEventi1">
 
-                <p>
+                <div class="infoGeneraliEventi">
 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra convallis lorem a convallis. Nulla facilisi. Proin vulputate elit nisi, sit amet tristique enim condimentum vel. Aliquam auctor eros non lectus mattis semper. Suspendisse consequat lacus ante, in consectetur nibh elementum sit amet. Sed enim enim, posuere non felis et, vehicula vulputate justo. Duis placerat felis massa, ut imperdiet sapien luctus id. Vivamus feugiat ante ac libero placerat, in posuere leo sodales. Aenean arcu lectus, facilisis id ullamcorper id, semper mollis sem. Duis ullamcorper nisl vitae pulvinar sagittis. Aliquam sit amet tempor mauris.<br>
+                    <?php  ?>
 
-                    Sed ullamcorper diam velit, sit amet fermentum turpis ornare at. Curabitur varius orci ullamcorper, aliquet mauris a, lobortis est. Suspendisse quis lectus diam. Ut laoreet, mi pharetra viverra lacinia, metus tortor lobortis lorem, ac pharetra massa turpis ac diam. Curabitur vitae eros sodales, viverra ipsum tempus, auctor orci. Integer tincidunt ut sapien vel condimentum. Sed a eros lorem.<br>
+                </div>
 
-                    Quisque lacinia lorem vel lacus posuere, vitae consequat velit iaculis. Mauris sed ligula risus. Nam rutrum nisl ac elit dignissim aliquet. Aliquam vitae imperdiet lacus. Ut ullamcorper vel tortor at aliquet. Donec lectus nisl, convallis et semper non, porta eu tortor. Fusce placerat lorem ligula, non porta enim cursus non. Duis posuere sed purus non mollis. Sed aliquet arcu faucibus odio mollis dapibus vitae nec nibh. Vivamus vel metus quis lacus egestas congue eu a velit.<br>
+                <div class="infoAttivitàEventi">
 
-                    Pellentesque nec dolor eget erat tempor fringilla quis ut sem. Vivamus tincidunt interdum nibh, nec finibus nulla dictum a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec commodo dignissim urna, vitae placerat leo semper ut. Donec laoreet scelerisque dui, ut aliquet dui fringilla vel. Donec pretium congue magna eu condimentum. Praesent tempor enim semper, feugiat tortor vitae, scelerisque lacus. Sed pellentesque nunc odio, volutpat eleifend ex interdum ut. Quisque at fermentum elit, in euismod libero. Morbi tempor leo eu dui vehicula, a ornare velit congue. Ut gravida hendrerit diam, eu tempus lorem dapibus porttitor. Donec sodales eros urna, eget commodo arcu faucibus eu.<br>
 
-                </p>
+                </div>
 
             </div>
 
@@ -141,17 +142,17 @@
 
             <div class="descrizioneEventi descrizioneEventi2">
 
-                <p>
+                <div class="infoGeneraliEventi">
 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra convallis lorem a convallis. Nulla facilisi. Proin vulputate elit nisi, sit amet tristique enim condimentum vel. Aliquam auctor eros non lectus mattis semper. Suspendisse consequat lacus ante, in consectetur nibh elementum sit amet. Sed enim enim, posuere non felis et, vehicula vulputate justo. Duis placerat felis massa, ut imperdiet sapien luctus id. Vivamus feugiat ante ac libero placerat, in posuere leo sodales. Aenean arcu lectus, facilisis id ullamcorper id, semper mollis sem. Duis ullamcorper nisl vitae pulvinar sagittis. Aliquam sit amet tempor mauris.<br>
+                    <?php  ?>
+                    
+                    
+                </div>
 
-                    Sed ullamcorper diam velit, sit amet fermentum turpis ornare at. Curabitur varius orci ullamcorper, aliquet mauris a, lobortis est. Suspendisse quis lectus diam. Ut laoreet, mi pharetra viverra lacinia, metus tortor lobortis lorem, ac pharetra massa turpis ac diam. Curabitur vitae eros sodales, viverra ipsum tempus, auctor orci. Integer tincidunt ut sapien vel condimentum. Sed a eros lorem.<br>
+                <div class="infoAttivitàEventi">
 
-                    Quisque lacinia lorem vel lacus posuere, vitae consequat velit iaculis. Mauris sed ligula risus. Nam rutrum nisl ac elit dignissim aliquet. Aliquam vitae imperdiet lacus. Ut ullamcorper vel tortor at aliquet. Donec lectus nisl, convallis et semper non, porta eu tortor. Fusce placerat lorem ligula, non porta enim cursus non. Duis posuere sed purus non mollis. Sed aliquet arcu faucibus odio mollis dapibus vitae nec nibh. Vivamus vel metus quis lacus egestas congue eu a velit.<br>
 
-                    Pellentesque nec dolor eget erat tempor fringilla quis ut sem. Vivamus tincidunt interdum nibh, nec finibus nulla dictum a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec commodo dignissim urna, vitae placerat leo semper ut. Donec laoreet scelerisque dui, ut aliquet dui fringilla vel. Donec pretium congue magna eu condimentum. Praesent tempor enim semper, feugiat tortor vitae, scelerisque lacus. Sed pellentesque nunc odio, volutpat eleifend ex interdum ut. Quisque at fermentum elit, in euismod libero. Morbi tempor leo eu dui vehicula, a ornare velit congue. Ut gravida hendrerit diam, eu tempus lorem dapibus porttitor. Donec sodales eros urna, eget commodo arcu faucibus eu.<br>
-
-                </p>
+                </div>
 
             </div>
 
@@ -259,6 +260,6 @@
 
     </footer>
 
-
+<?php mysqli_close($db_connection); ?>
 
 </body></html>
