@@ -118,6 +118,7 @@ body {
     grid-row: 2/3;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    padding: 2em;
 }
 
 .partecipaHome .sottoDiv:hover {
@@ -156,8 +157,8 @@ body {
 }
 
 .partecipaHome .radio {
-    height: 15em;
-    width: 15em;
+    height: 15vw;
+    width: 15vw;
     overflow: hidden;
     border-radius: 50%;
     grid-column: 2/3;
