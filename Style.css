@@ -1083,8 +1083,9 @@ body {
     grid-column: 1/4;
     text-align: center;
     margin-top: 2vh;
-    font-size: 2vw;
     font-size: 2vh;
+    font-size: 2vw; 
+    
 
 
 }
