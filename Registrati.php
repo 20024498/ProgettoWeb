@@ -41,7 +41,7 @@
     </header>
 
 
-    <form action="Autenticazione.php" method="post">
+    <form action="Autenticazione.php" method="post" onsubmit="checkAccount()">
 
         <section class="sezioneRegistrati">
 
@@ -66,7 +66,7 @@
 
                 <div class="bottoneRegistrati">
 
-                    <input class="testoBottone" type="submit" value="ISCRIVITI" onsubmit="checkAccount()">
+                    <input class="testoBottone" type="submit" value="ISCRIVITI" >
 
                     <p id="validation">Validation paragraph</p>
                     
@@ -100,7 +100,7 @@
         function checkAccount(){
             validation = document.getElementById("Email");
             email = document.getElementById("Email").value;
-            if (verifEmail(email)) {
+            if (verifyEmail(email)) {
                 validation.innerHTML = email + "Indirizzo corretto";
                 validation.style.color = 'green';
                 } 
