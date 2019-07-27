@@ -128,11 +128,11 @@
                             die("Connection failed: " . mysqli_connect_error());
 						}
                     
-                    $sql = "SELECT Data, Partenza, Costo, Notti, Trasporto FROM GeneraliViaggio WHERE Destinazione = 'Pag'";
-                    $result = mysqli_query($conn, $sql);
+                            $sql = "SELECT Data, Partenza, Costo, Notti, Trasporto FROM GeneraliViaggio WHERE Destinazione = 'Pag'";
+                            $result = mysqli_query($conn, $sql);
 
-                    if (mysqli_num_rows($result) > 0) {
-                        while($row = mysqli_fetch_assoc($result)) {
+                            if (mysqli_num_rows($result)>0) {
+                            while($row = mysqli_fetch_assoc($result)) {
 								
                                 echo '<div class="dataEventi">'. '<p>'. "DATA: " . $row["Data"] . '</p>'.'</div>';
                                 echo '<div class="partenzaEventi">'.'<p>'."PARTENZA: " . $row["Partenza"] .'</p>'.'</div>';

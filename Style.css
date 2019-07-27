@@ -870,6 +870,19 @@ body {
 
 /*GALLERIA INIZIO*/
 
+.intestazioneGalleria{
+    font-size: 10vw;
+    font-size: 10vh;
+    background-color: black;
+
+}
+
+
+.intestazioneGalleria .testoIntestazione{
+    font-family: scriptina;
+    color:white;
+    text-align:center;
+}
 .sliderGalleria {
     background-color: black;
     margin-bottom: 3em;
