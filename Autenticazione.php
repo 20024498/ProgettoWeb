@@ -10,13 +10,13 @@ $mail = $_POST["mail"];
 $sql = "INSERT INTO Credenziali (Nome, Cognome, Email)
 VALUES ('$nome', '$cognome', '$mail')";
 
-if (mysqli_query($db_connection, $sql)) {
+if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
 } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($db_connection);
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
-mysqli_close($db_connection);
+mysqli_close($conn;
 
 
 

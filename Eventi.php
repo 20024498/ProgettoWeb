@@ -24,8 +24,8 @@
 </head>
 
 <body>
-    
-    <?php import 'Connessione.php';  ?>
+
+
 
     <header>
 
@@ -109,7 +109,46 @@
 
                 <div class="infoGeneraliEventi">
 
-                    <?php  ?>
+                    <?php 
+                        $servername = "localhost";
+                        $username = "pweb1819gilia";
+                        $password = "GmDMs7hFnPFN";
+                        $dbname = "my_pweb1819gilia";
+
+                        $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+                        if (!$conn) {
+                            die("Connection failed: " . mysqli_connect_error());
+                        }
+
+                        else{
+    
+                            echo "connessione stabilita";
+                        }
+ 
+                    
+                    $sql = "SELECT Data, Partenza, Costo , Modalità, Notti FROM GeneraliViaggio WHERE Destinazione= 'Pag'";
+                    $result = mysqli_query($conn, $sql);
+
+                    if (mysqli_num_rows($result) > 0) {
+                        // output data of each row
+                        while($row = mysqli_fetch_assoc($result)) {
+
+                                echo "data: " . $row["Data"] . "<br>" ;
+                                echo "partenza: " . $row["Partenza"] . "<br>" ;
+                                echo "costo: " . $row["Costo"] . "<br>" ;
+                                echo "modalità: " . $row["Modalità"] . "<br>" ;
+                                echo "notti: " . $row["Notti"] . "<br>" ;
+                        }
+                        
+                    } 
+                    else {
+                        echo "0 results";
+                    }
+
+                    mysqli_close($conn); 
+
+                    ?>
 
                 </div>
 
@@ -145,8 +184,8 @@
                 <div class="infoGeneraliEventi">
 
                     <?php  ?>
-                    
-                    
+
+
                 </div>
 
                 <div class="infoAttivitàEventi">
@@ -179,6 +218,7 @@
         L.marker([44.553505, 14.884991]).addTo(mymap);
         L.marker([44.53876, 14.91461]).addTo(mymap);
         L.marker([44.441487, 15.045337]).addTo(mymap);
+
     </script>
 
 
@@ -205,6 +245,7 @@
         L.marker([40.031375, 18.020344]).addTo(mymap2);
         L.marker([40.005989, 18.019514]).addTo(mymap2);
         L.marker([40.037455, 18.015562]).addTo(mymap2);
+
     </script>
 
 
@@ -260,6 +301,8 @@
 
     </footer>
 
-<?php mysqli_close($db_connection); ?>
 
-</body></html>
+
+</body>
+
+</html>
