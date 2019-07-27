@@ -107,7 +107,7 @@
 
             <div class="descrizioneEventi descrizioneEventi1">
 
-                <div class="infoGeneraliEventi">
+                <div class="wrapInfoGeneraliEventi">
 
                     <?php 
                         $servername = "localhost";
@@ -119,26 +119,20 @@
 
                         if (!$conn) {
                             die("Connection failed: " . mysqli_connect_error());
-                        }
-
-                        else{
-    
-                            echo "connessione stabilita";
-                        }
- 
+						}
                     
-                    $sql = "SELECT Data, Partenza, Costo , Modalità, Notti FROM GeneraliViaggio WHERE Destinazione= 'Pag'";
+                    $sql = "SELECT Data, Partenza, Costo, Notti, Trasporto FROM GeneraliViaggio WHERE Destinazione = 'Pag'";
                     $result = mysqli_query($conn, $sql);
 
                     if (mysqli_num_rows($result) > 0) {
-                        // output data of each row
                         while($row = mysqli_fetch_assoc($result)) {
-
-                                echo "data: " . $row["Data"] . "<br>" ;
-                                echo "partenza: " . $row["Partenza"] . "<br>" ;
-                                echo "costo: " . $row["Costo"] . "<br>" ;
-                                echo "modalità: " . $row["Modalità"] . "<br>" ;
-                                echo "notti: " . $row["Notti"] . "<br>" ;
+								
+                                echo '<div class="dataEventi">'. "data: " . $row["Data"] .'</div>';
+                                echo '<div class="partenzaEventi">'."partenza: " . $row["Partenza"] .'</div>';
+                                echo '<div class="costoEventi">'."costo: " . $row["Costo"] .'</div>';
+                                echo '<div class="nottiEventi">'."notti: " . $row["Notti"] .'</div>';
+                                echo '<div class="trasportoEventi">'."trasporto: " . $row["Trasporto"] .'</div>';
+                                
                         }
                         
                     } 
@@ -150,9 +144,10 @@
 
                     ?>
 
+
                 </div>
 
-                <div class="infoAttivitàEventi">
+                <div class="wrapInfoAttivitàEventi">
 
 
                 </div>
@@ -181,14 +176,50 @@
 
             <div class="descrizioneEventi descrizioneEventi2">
 
-                <div class="infoGeneraliEventi">
+                <div class="wrapInfoGeneraliEventi">
 
-                    <?php  ?>
+                    <?php 
+                        $servername = "localhost";
+                        $username = "pweb1819gilia";
+                        $password = "GmDMs7hFnPFN";
+                        $dbname = "my_pweb1819gilia";
+
+                        $conn = mysqli_connect($servername, $username, $password, $dbname);
+
+                        if (!$conn) {
+                            die("Connection failed: " . mysqli_connect_error());
+                        }
+
+                       
+ 
+                    
+                    $sql = "SELECT Data, Partenza, Costo, Notti, Trasporto FROM GeneraliViaggio WHERE Destinazione = 'Gallipoli'";
+                    $result = mysqli_query($conn, $sql);
+
+                    if (mysqli_num_rows($result) > 0) {
+                        while($row = mysqli_fetch_assoc($result)) {
+								
+                                echo '<div class="dataEventi">'. '<p>'. "DATA: " . $row["Data"] . '</p>'.'</div>';
+                                echo '<div class="partenzaEventi">'.'<p>'."PARTENZA: " . $row["Partenza"] .'</p>'.'</div>';
+                                echo '<div class="costoEventi">'.'<p>'."COSTO: " . $row["Costo"] .'€' .'</p>'.'</div>';
+                                echo '<div class="nottiEventi">'.'<p>'."NOTTI: " . $row["Notti"] .'</p>'.'</div>';
+                                echo '<div class="trasportoEventi">'.'<p>'."TRASPORTO: " . $row["Trasporto"] .'</p>'.'</div>';
+                                
+                        }
+                        
+                    } 
+                    else {
+                        echo "0 results";
+                    }
+
+                    mysqli_close($conn); 
+
+                    ?>
 
 
                 </div>
 
-                <div class="infoAttivitàEventi">
+                <div class="wrapInfoAttivitàEventi">
 
 
                 </div>
