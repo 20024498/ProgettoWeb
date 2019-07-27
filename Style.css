@@ -118,6 +118,7 @@ body {
     grid-row: 2/3;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    padding: 2em;
 }
 
 .partecipaHome .sottoDiv:hover {
@@ -156,8 +157,8 @@ body {
 }
 
 .partecipaHome .radio {
-    height: 15em;
-    width: 15em;
+    height: 15vw;
+    width: 15vw;
     overflow: hidden;
     border-radius: 50%;
     grid-column: 2/3;
@@ -697,8 +698,6 @@ body {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: auto auto auto;
-
-
 }
 
 .copertinaBlog h1 {
@@ -718,11 +717,10 @@ body {
 .sectionBlog {
     display: grid;
     grid-template-rows: 1.5fr 5fr 1fr;
-    grid-column-gap: 1em;
+    grid-column-gap: 2em;
     grid-template-columns: 4.5fr 5.5fr;
-
-
-
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .sectionBlog:nth-of-type(odd) {
@@ -768,7 +766,6 @@ body {
 .wrapTestoLateraleBlog {
     grid-column: 2/3;
     grid-row: 2/3;
-
 
 }
 
