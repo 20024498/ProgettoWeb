@@ -6,8 +6,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="descritpion" content="Questa pagina è il blog del sito utilizzato per rendere partecipi
-         gli utenti di quali gite sono state effettuate precedentemente.">
+    <meta name="descritpion" content="Questa pagina serve per iscriversi alla nostra newsletter">
     <meta name="author" content="Alcamo Stefano & Gili Andrea">
     <meta name="keywords" content="Blog, Traveling, Journey">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
