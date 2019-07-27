@@ -1023,7 +1023,22 @@ body {
 }
 
 
-
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 
 
@@ -1069,6 +1084,8 @@ body {
     text-align: center;
     margin-top: 2vh;
     font-size: 2vw;
+
+
 }
 
 .wrapCredenzialiRegistrati {
@@ -1088,17 +1105,17 @@ body {
     border-radius: 0.5em;
 }
 
-.wrapCredenzialiRegistrati .Nome {
+.wrapCredenzialiRegistrati #Nome {
 
     grid-row: 1/2;
 }
 
-.wrapCredenzialiRegistrati .Cognome {
+.wrapCredenzialiRegistrati #Cognome {
 
     grid-row: 2/3;
 }
 
-.wrapCredenzialiRegistrati .Email {
+.wrapCredenzialiRegistrati #Email {
 
     grid-row: 3/4;
 }
@@ -1112,6 +1129,12 @@ body {
 .underButtonText{
     font-size: 1.5vw;
     font-size: 1.5vh;
+}
+
+#validation{
+    text-align: center;
+    font-size: 2vw;
+    font-size: 2vh;
 }
 
 
