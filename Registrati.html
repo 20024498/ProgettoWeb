@@ -58,17 +58,19 @@
 
                 <div class="wrapCredenzialiRegistrati">
 
-                    <input class="credenziale Nome" type="text" placeholder=" Nome*" name="nome" required>
-                    <input class="credenziale Cognome" type="text" placeholder=" Cognome*" name="cognome" required>
-                    <input class="credenziale Email" type="email" placeholder=" Indirizzo Email*" name="mail" required>
+                    <input class="credenziale" id="Nome" type="text" placeholder=" Nome*" name="nome" pattern="[a-zA-Zéèòàùì\s]{1,50}" required>
+                    <input class="credenziale" id="Cognome" type="text" placeholder=" Cognome*" name="cognome" pattern="[a-zA-Zéèòàùì\s]{1,50}"+ required>
+                    <input class="credenziale" id="Email" type="email" placeholder=" Indirizzo Email*" name="mail" pattern="[A-z0-9\.\+_-]+@[A-z0-9\._-]+\.[A-z]{2,6}" required>
 
                 </div>
 
                 <div class="bottoneRegistrati">
 
-                    <input type="submit" value="ISCRIVITI">
+                    <input type="submit" value="ISCRIVITI" onsubmit="checkAccount()">
+
+                    <p id="validation">Validation paragraph</p>
                     
-                    <p class= underButtonText>I campi con * sono obbligatori.</p>
+                    <p class= "underButtonText">I campi con * sono obbligatori.</p>
 
                 </div>
                 
@@ -79,6 +81,36 @@
         </section>
 
     </form>
+
+
+
+
+
+    <script>
+        
+        function verifyEmail(email) {
+            var regex = /^(([^<>;()[].,;:s@"]+(.[^<>()[].,;:s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/;
+            return regex.test(email);
+        }
+
+
+
+
+
+        function checkAccount(){
+            validation = document.getElementById("Email");
+            email = document.getElementById("Email").value;
+            if (validaEmail(email)) {
+                validation.innerHTML = email + "Indirizzo corretto";
+                validation.style.color = 'green';
+                } 
+            else
+            {
+                validation.innerHTML = email + " indirizzo non corretto";
+                validation.style.color = 'red';
+                }
+        }   
+    </script>
 
 
 
