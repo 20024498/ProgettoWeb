@@ -24,8 +24,8 @@
 </head>
 
 <body>
-    
-    <?php import 'Connessione.php';  ?>
+
+    <?php include 'Connessione.php'; ?>
 
     <header>
 
@@ -109,7 +109,24 @@
 
                 <div class="infoGeneraliEventi">
 
-                    <?php  ?>
+                    <?php 
+
+                        $sql = "SELECT Data, Partenza, Costo , Modalità, Notti FROM GeneraliViaggio WHERE Destinazione= 'Pag'";
+                        $result = mysqli_query($db_connection, $sql);
+                        if (mysqli_num_rows($result) > 0) {
+                            
+                            echo "data: " . $row["Data"] . "<br>" ;
+                            echo "partenza: " . $row["Partenza"] . "<br>" ;
+                            echo "costo: " . $row["Costo"] . "<br>" ;
+                            echo "modalità: " . $row["Modalità"] . "<br>" ;
+                            echo "notti: " . $row["Notti"] . "<br>" ;
+                        }
+
+                         else {
+                            echo "0 results";
+                        }
+
+                    ?>
 
                 </div>
 
@@ -145,8 +162,8 @@
                 <div class="infoGeneraliEventi">
 
                     <?php  ?>
-                    
-                    
+
+
                 </div>
 
                 <div class="infoAttivitàEventi">
@@ -260,6 +277,6 @@
 
     </footer>
 
-<?php mysqli_close($db_connection); ?>
+    <?php mysqli_close($db_connection); ?>
 
 </body></html>
