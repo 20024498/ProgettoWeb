@@ -110,33 +110,13 @@
 
             <div class="descrizioneEventi descrizioneEventi1">
 
-                
-               <!--<div class="sinistraEventi" onclick="select2(-1)"> 
-                    <div class="conteinerDirection">
-                        <a class= "indietroEventi" >❮</a>
-                    </div>
-                            
-                </div> 
-                    
-                <div class= "destraEventi" onclick="select2(1);">
-                    <div class="conteinerDirection">
-                            <a class= "avantiEventi">❯</a>
-                    </div> 
-                </div>-->
 
 
                 <div class="wrapInfoGeneraliEventi">
 
 
 
-
-
-
-
-
-
-
-                    <?php 
+                    <!--   <?php 
                         $servername = "localhost";
                         $username = "pweb1819gilia";
                         $password = "GmDMs7hFnPFN";
@@ -154,11 +134,11 @@
                     if (mysqli_num_rows($result) > 0) {
                         while($row = mysqli_fetch_assoc($result)) {
 								
-                                echo '<div class="dataEventi">'. "data: " . $row["Data"] .'</div>';
-                                echo '<div class="partenzaEventi">'."partenza: " . $row["Partenza"] .'</div>';
-                                echo '<div class="costoEventi">'."costo: " . $row["Costo"] .'</div>';
-                                echo '<div class="nottiEventi">'."notti: " . $row["Notti"] .'</div>';
-                                echo '<div class="trasportoEventi">'."trasporto: " . $row["Trasporto"] .'</div>';
+                                echo '<div class="dataEventi">'. '<p>'. "DATA: " . $row["Data"] . '</p>'.'</div>';
+                                echo '<div class="partenzaEventi">'.'<p>'."PARTENZA: " . $row["Partenza"] .'</p>'.'</div>';
+                                echo '<div class="costoEventi">'.'<p>'."COSTO: " . $row["Costo"] .'€' .'</p>'.'</div>';
+                                echo '<div class="nottiEventi">'.'<p>'."NOTTI: " . $row["Notti"] .'</p>'.'</div>';
+                                echo '<div class="trasportoEventi">'.'<p>'."TRASPORTO: " . $row["Trasporto"] .'</p>'.'</div>';
                                 
                         }
                         
@@ -169,13 +149,29 @@
 
                     mysqli_close($conn); 
 
-                    ?>
+                    ?> -->
 
 
                 </div>
 
                 <div class="wrapInfoAttivitàEventi">
 
+                    <div class="wrapFrecciaSinistra">
+                        <p>SX</p>
+                    </div>
+
+                    <div class="infoAttivitàEventi">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae feugiat orci. Suspendisse vestibulum enim orci, quis dictum lorem consectetur molestie. Nulla tincidunt, eros sit amet tincidunt pretium, mauris sapien euismod lorem, nec convallis est mi auctor felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida mauris risus, placerat sollicitudin augue semper a. Integer fermentum erat ac lectus elementum posuere. Phasellus eleifend nibh elit, id vestibulum nisi fringilla a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec non dictum nibh.
+                        
+                            consectetur adipiscing elit. Vestibulum vitae feugiat orci. Suspendisse vestibulum enim orci, quis dictum lorem consectetur molestie. Nulla tincidunt, eros sit amet tincidunt pretium, mauris sapien euismod lorem, nec convallis est mi auctor felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida mauris risus, placerat sollicitudin augue semper a. Integer fermentum erat ac lectus elementum posuere. Phasellus eleifend nibh elit, id vestibulum nisi fringilla a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec non dictum nibh
+                            
+                            consectetur adipiscing elit. Vestibulum vitae feugiat orci. Suspendisse vestibulum enim orci, quis dictum lorem consectetur molestie. Nulla tincidunt, eros sit amet tincidunt pretium, mauris sapien euismod lorem, nec convallis est mi auctor felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse gravida mauris risus, placerat sollicitudin augue semper a. Integer fermentum erat ac lectus elementum posuere. Phasellus eleifend nibh elit, id vestibulum nisi fringilla a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec non dictum nibh
+                        </p>
+                    </div>
+
+                    <div class="wrapFrecciaDestra">
+                        <p>DX</p>
+                    </div>
 
                 </div>
 
@@ -203,22 +199,11 @@
 
             <div class="descrizioneEventi descrizioneEventi2">
 
-                    <!--<div class="sinistra" onclick="select2(-1)"> 
-                            <div class="conteinerDirection">
-                                <a class= "indietro" >❮</a>
-                            </div>
-                                    
-                        </div> 
-                            
-                        <div class= "destra" onclick="select2(1);">
-                            <div class="conteinerDirection">
-                                    <a class= "avanti">❯</a>
-                            </div> 
-                        </div>-->
+
 
                 <div class="wrapInfoGeneraliEventi">
 
-                   <!-- <?php 
+                    <!-- <?php 
                         $servername = "localhost";
                         $username = "pweb1819gilia";
                         $password = "GmDMs7hFnPFN";
