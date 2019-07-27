@@ -112,18 +112,18 @@
             <div class="descrizioneEventi descrizioneEventi1">
 
                 
-               <!--<div class="sinistraEventi" onclick="select2(-1)"> 
-                    <div class="conteinerDirection">
+               <div class="sinistraEventi" onclick="select2(-1)"> 
+                    <!--<div class="conteinerDirection">
                         <a class= "indietroEventi" >❮</a>
-                    </div>
+                    </div>-->
                             
                 </div> 
                     
                 <div class= "destraEventi" onclick="select2(1);">
-                    <div class="conteinerDirection">
+                    <!--<div class="conteinerDirection">
                             <a class= "avantiEventi">❯</a>
-                    </div> 
-                </div>-->
+                    </div>--> 
+                </div>
 
 
                 <div class="wrapInfoGeneraliEventi">
@@ -149,11 +149,11 @@
                             die("Connection failed: " . mysqli_connect_error());
 						}
                     
-                    $sql = "SELECT Data, Partenza, Costo, Notti, Trasporto FROM GeneraliViaggio WHERE Destinazione = 'Pag'";
-                    $result = mysqli_query($conn, $sql);
+                            $sql = "SELECT Data, Partenza, Costo, Notti, Trasporto FROM GeneraliViaggio WHERE Destinazione = 'Pag'";
+                            $result = mysqli_query($conn, $sql);
 
-                    if (mysqli_num_rows($result) > 0) {
-                        while($row = mysqli_fetch_assoc($result)) {
+                            if (mysqli_num_rows($result)>0) {
+                            while($row = mysqli_fetch_assoc($result)) {
 								
                                 echo '<div class="dataEventi">'. "data: " . $row["Data"] .'</div>';
                                 echo '<div class="partenzaEventi">'."partenza: " . $row["Partenza"] .'</div>';
