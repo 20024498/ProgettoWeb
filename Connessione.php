@@ -1,17 +1,20 @@
 <?php
 
-$hostName = "localhost";
-$userName = "pweb1819gilia";
+
+$servername = "localhost";
+$username = "pweb1819gilia";
 $password = "GmDMs7hFnPFN";
-$database = "my_pweb1819gilia";
+$dbname = "my_pweb1819gilia";
 
-$db_connection = new mysqli($hostname, $username, $password, $database);
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
-if ($db_connection->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
+
 else{
-   echo "connessione stabilità";
+    
+    echo "connessione stabilita"
 }
 
 ?>
