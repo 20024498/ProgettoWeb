@@ -59,7 +59,7 @@
 
                     <input class="credenziale" id="Nome" type="text" placeholder=" Nome*" name="nome" pattern="[a-zA-Zéèòàùì\s]{1,50}" required>
                     <input class="credenziale" id="Cognome" type="text" placeholder=" Cognome*" name="cognome" pattern="[a-zA-Zéèòàùì\s]{1,50}" required>
-                    <input class="credenziale" id="Email" type="email" placeholder=" Indirizzo Email*" name="mail" pattern="[A-z0-9\.\+_-]+@[A-z0-9\._-]+\.[A-z]{2,6}" required>
+                    <input class="credenziale" id="Email" type="email" placeholder=" Indirizzo Email*" name="mail" pattern="[A-z0-9\.\+_-]+@[A-z0-9\._-]+\.[A-z]{2,6}" oninput="checkEmail()" required>
 
                 </div>
 
@@ -67,7 +67,7 @@
 
                     <input class="testoBottone" type="submit" value="ISCRIVITI" >
 
-                    <p id="validation">Validation paragraph</p>
+                    <p id="validation"><br></p>
                     
                     <p class= "underButtonText">I campi con * sono obbligatori.</p>
 
@@ -87,26 +87,25 @@
 
     <script>
         
-        function verifyEmail(email) {
-            var regex = /^(([^<>;()[].,;:s@"]+(.[^<>()[].,;:s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/;
-            return regex.test(email);
-        }
 
 
-
-
-
-        function checkAccount(){
-            validation = document.getElementById("Email");
-            email = document.getElementById("Email").value;
-            if (verifyEmail(email)) {
-                validation.innerHTML = email + "Indirizzo corretto";
-                validation.style.color = 'green';
+        function checkEmail(){
+        
+            if (document.getElementById("Email").checkValidity()) {
+                document.getElementById("Email").style.backgroundColor = "green";
+                document.getElementById("validation").innerHTML = '<br>';
                 } 
-            else
+                
+            else if(document.getElementById("Email").value== ""){
+            
+            	document.getElementById("validation").innerHTML = '<br>';
+                document.getElementById("Email").style.backgroundColor = "";
+            }
+            
+            else 
             {
-                validation.innerHTML = email + " indirizzo non corretto";
-                validation.style.color = 'red';
+                document.getElementById("validation").innerHTML = "Indirizzo non corretto";
+                document.getElementById("Email").style.backgroundColor = "red";
                 }
         }   
     </script>
