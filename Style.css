@@ -488,6 +488,7 @@ body {
 
     text-align: center;
     font-size: 4vw;
+    font-size: 4vh;
     color: white;
     margin: 0;
     width: 100%;
@@ -504,7 +505,9 @@ body {
 
 .intermezzoEventi h2 {
 
-    font-size: 275%;
+    font-size: 7vw;
+    font-size: 7vh;
+
     text-align: center;
     grid-row: 2/3;
 }
@@ -590,7 +593,8 @@ body {
 
     position: absolute;
     text-align: center;
-    font-size: 3.5vw;
+    font-size: 5vw;
+    font-size: 5vh;
     color: white;
     margin: 0;
     width: 100%;
@@ -636,7 +640,8 @@ body {
 
 .titoloEventi h2 {
     grid-row: 2/3;
-    font-size: 200%;
+    font-size: 7vw;
+    font-size: 7vh;
     text-align: center;
 
 }
