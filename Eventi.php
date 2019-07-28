@@ -157,7 +157,7 @@
                 <div class="wrapInfoAttivitàEventi">
 
                     <div class="wrapFrecciaSinistra" onclick="plusSlides(-1)">
-                        <p>&#10094</p>
+                        <p>&#10094;</p>
                     </div>
 
                     <div class="infoAttivitàEventi">
@@ -172,7 +172,7 @@
                     </div>
 
                     <div class="wrapFrecciaDestra" onclick="plusSlides(1)">
-                        <p>&#10095</p>
+                        <p>&#10095;</p>
                     </div>
 
                 </div>
@@ -249,7 +249,7 @@
                 <div class="wrapInfoAttivitàEventi">
 
                     <div class="wrapFrecciaSinistra" onclick="plusSlidesb(-1)">
-                            <p>&#10094</p>
+                            <p>&#10094;</p>
                         </div>
     
                         <div class="infoAttivitàEventi">
@@ -264,7 +264,7 @@
                         </div>
         
                         <div class="wrapFrecciaDestra" onclick="plusSlidesb(1)">
-                            <p>&#10095</p>
+                            <p>&#10095;</p>
                         </div>
                 </div>
 
