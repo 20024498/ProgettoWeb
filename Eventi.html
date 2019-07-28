@@ -156,23 +156,23 @@
 
                 <div class="wrapInfoAttivitàEventi">
 
-                    <div class="wrapFrecciaSinistra">
-                        <p>SX</p>
+                    <div class="wrapFrecciaSinistra" onclick="plusSlides(-1)">
+                        <p>&#10094</p>
                     </div>
 
                     <div class="infoAttivitàEventi">
-                        <p id="a1">Lorem ipsum dolor sit amet1 </p>
-                        <p id="a2">Lorem ipsum dolor sit amet2 </p>
-                        <p id="a3">Lorem ipsum dolor sit amet3 </p>
-                        <p id="a4">Lorem ipsum dolor sit amet4 </p>
-                        <p id="a5">Lorem ipsum dolor sit amet5 </p>
-                        <p id="a6">Lorem ipsum dolor sit amet6 </p>
-                        <p id="a7">Lorem ipsum dolor sit amet7 </p>
-                        <p id="a8">Lorem ipsum dolor sit amet8 </p>
+                        <p class="a">Lorem ipsum dolor sit amet1 </p>
+                        <p class="a">Lorem ipsum dolor sit amet2 </p>
+                        <p class="a">Lorem ipsum dolor sit amet3 </p>
+                        <p class="a">Lorem ipsum dolor sit amet4 </p>
+                        <p class="a">Lorem ipsum dolor sit amet5 </p>
+                        <p class="a">Lorem ipsum dolor sit amet6 </p>
+                        <p class="a">Lorem ipsum dolor sit amet7 </p>
+                        <p class="a">Lorem ipsum dolor sit amet8 </p>
                     </div>
 
-                    <div class="wrapFrecciaDestra">
-                        <p>DX</p>
+                    <div class="wrapFrecciaDestra" onclick="plusSlides(1)">
+                        <p>&#10095</p>
                     </div>
 
                 </div>
@@ -248,27 +248,24 @@
 
                 <div class="wrapInfoAttivitàEventi">
 
-                    <div class="wrapFrecciaSinistra">
-                        <p>SX</p>
-                    </div>
-
-                    <div class="infoAttivitàEventi">
-                        
-                        <p id="b1">Lorem ipsum dolor sit amet1 </p>
-                        <p id="b2">Lorem ipsum dolor sit amet2 </p>
-                        <p id="b3">Lorem ipsum dolor sit amet3 </p>
-                        <p id="b4">Lorem ipsum dolor sit amet4 </p>
-                        <p id="b5">Lorem ipsum dolor sit amet5 </p>
-                        <p id="b6">Lorem ipsum dolor sit amet6 </p>
-                        <p id="b7">Lorem ipsum dolor sit amet7 </p>
-                        <p id="b8">Lorem ipsum dolor sit amet8 </p>
-                        
-                    </div>
-
-                    <div class="wrapFrecciaDestra">
-                        <p>DX</p>
-                    </div>
-
+                    <div class="wrapFrecciaSinistra" onclick="plusSlidesb(-1)">
+                            <p>&#10094</p>
+                        </div>
+    
+                        <div class="infoAttivitàEventi">
+                            <p class="b">Lorem ipsum dolor sit amet1 </p>
+                            <p class="b">Lorem ipsum dolor sit amet2 </p>
+                            <p class="b">Lorem ipsum dolor sit amet3 </p>
+                            <p class="b">Lorem ipsum dolor sit amet4 </p>
+                            <p class="b">Lorem ipsum dolor sit amet5 </p>
+                            <p class="b">Lorem ipsum dolor sit amet6 </p>
+                            <p class="b">Lorem ipsum dolor sit amet7 </p>
+                            <p class="b">Lorem ipsum dolor sit amet8 </p>
+                        </div>
+        
+                        <div class="wrapFrecciaDestra" onclick="plusSlidesb(1)">
+                            <p>&#10095</p>
+                        </div>
                 </div>
 
             </div>
@@ -327,7 +324,54 @@
     </script>
 
 
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("a");
+    if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+    slides[slideIndex-1].style.display = "block";
+    } 
+    
+
+
+    var slideIndexb = 1;
+    showSlidesb(slideIndexb);
+
+    function plusSlidesb(n) {
+        showSlidesb(slideIndexb += n);
+    }
+
+    function currentSlideb(n) {
+        showSlidesb(slideIndexb = n);
+    }
+
+    function showSlidesb(n) {
+    var i;
+    var slides = document.getElementsByClassName("b");
+    if (n > slides.length) {slideIndexb = 1}
+        if (n < 1) {slideIndexb = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+    slides[slideIndexb-1].style.display = "block";
+    } 
+    
+    </script>
 
 
 
